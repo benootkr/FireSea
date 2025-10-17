@@ -16,12 +16,11 @@ import io
 
 # Page configuration
 st.set_page_config(
-    page_title="FireSea TTCC",
-    page_icon="🦆",
+    page_title="Student Data Lookup",
+    page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
 
 # Custom CSS for better styling
 st.markdown("""
@@ -1357,15 +1356,7 @@ def load_data():
 
 
 def main():
-    st.markdown(
-        """
-        <h1 style='font-size: 60px; color: #1F4E78; text-align: center; font-weight: bold;'>
-            🦆 FireSea TTCC 2025 Student Database
-        </h1>
-        """,
-        unsafe_allow_html=True
-    )
-
+    st.markdown('<p class="main-header">🎓 Student Data Lookup System</p>', unsafe_allow_html=True)
     
     with st.sidebar:
         st.header("🔍 Data Management")
